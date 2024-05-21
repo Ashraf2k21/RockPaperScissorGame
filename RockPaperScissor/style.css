@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+
+h1{
+    background-color: rgb(37, 0, 70);
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choices{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.choice{
+    height: 160px;
+    width: 160px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+img:active{
+   height: 145px;
+   width: 145px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+.score{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.user-score, .ai-score{
+    font-size: 3rem;
+}
+
+.msg-box button{
+    margin-top: 2rem;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.msg-box input{
+    margin-top: 2rem;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    padding: 0 1rem;
+}
+.winning-gif, .loosing-gif{
+    width: 0px;
+    height: 0;
+}
+
+@media (max-width: 600px){
+
+    .choices {
+        flex-direction: column;
+        height: auto;
+    }
+    .msg-box button {
+        height: fit-content;
+    }
+}
